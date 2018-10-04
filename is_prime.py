@@ -1,6 +1,6 @@
 def is_prime(x):
   n = 0
-  if x < 2:
+  if x < 2 or x % 2 == 0:
     return False
   elif x == 2:
     return True
@@ -10,5 +10,3 @@ def is_prime(x):
         n += 1
     if n == 0:
       return True
-    else:
-      return False
